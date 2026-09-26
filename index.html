@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+            integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="tablet.css" />
+        <link rel="stylesheet" href="desktop.css" />
+        <title>Website Clone Project</title>
+    </head>
+    <body>
+        <!-- Sidebar  -->
+        <aside id="sidebar" class="sidebar">
+            <!-- Sidebar Logo -->
+            <div class="sidebar_logo">
+                <i class="fa-brands fa-gg-circle"></i>
+                <span>Labeler</span>
+            </div>
+            <!-- Sidebar Navigation -->
+            
+                <nav class="sidenav_item">
+                    <a href="#" class="nav_item active">
+                        <i class="fa-regular fa-house"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#" class="nav_item">
+                        <i class="fa-regular fa-folder"></i>
+                        <span>My Projects</span>
+                    </a>
+                    <a href="#" class="nav_item">
+                        <i class="fa-solid fa-list"></i>
+                        <span>Tasks</span>
+                    </a>
+                    <a href="#" class="nav_item">
+                        <i class="fa-solid fa-database"></i>
+                        <span>Datasets</span>
+                    </a>
+                    <a href="#" class="nav_item">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>Team</span>
+                    </a>
+                    <a href="#" class="nav_item">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <span>Reports</span>
+                    </a>
+                    <a href="#" class="nav_item">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                    <a href="#" class="nav_item">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </nav>
+            
+        </aside>
+        <!-- Main Content Wrapper -->
+        <div class="main_wrapper">
+            <!-- Header Left Navigation -->
+            <header class="top_header">
+               <div class="header_logo sidebar_logo1">
+                <i class="fa-brands fa-gg-circle"></i>
+                <span>Labeler</span>
+               </div>
+                <nav class="header_left_nav">
+                    <a href="#" id="btn" class="nav_item active">
+                        <i class="fa-regular fa-house"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#" class="nav_item">
+                        <i class="fa-regular fa-folder"></i>
+                        <span>Projects</span>
+                    </a>
+                    <a href="#" class="nav_item">
+                        <i class="fa-solid fa-list"></i>
+                        <span>Tasks</span>
+                    </a>
+                    <a href="#" class="nav_item">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Analytics</span>
+                    </a>
+                </nav>
+                 <!--Right Header Navigation  -->
+               <button id="menu_toggle" class="menu_toggle">☰</button>
+              <div class="header_right">
+                    <button class="icon_btn badge_btn">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="badge">3</span>
+                    </button>
+                    <button class="icon_btn">
+                        <i class="fa-regular fa-circle-question"></i>
+                    </button>
+                    <div class="user_profile">
+                        <img
+                            src="Image/h.jpg"
+                            alt="user image"
+                            class="avatar"
+                        />
+                    </div>
+                    <div class="username">
+                        <span>Omar R</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+            <!--Main Content Area  -->
+            <main class="content_area">
+                <!-- Main Content Left -->
+                <div class="main_left_content">
+                    <h1 class="heading">Welcome back,Omar</h1>
+                    <p class="sub_heading">
+                        Manage your annotation projects and track your progress.
+                    </p>
+                    <section class="status">
+                        <div class="status_item">
+                            <div class="child">
+                                <p>Total Projects</p>
+                                <i class="fa-solid fa-border-all"></i>
+                            </div>
+                            <p>24</p>
+                        </div>
+                        <div class="status_item">
+                            <div class="child">
+                                <p>Completed Tasks</p>
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <p>1284</p>
+                        </div>
+                        <div class="status_item">
+                            <div class="child">
+                                <p>Pending Tasks</p>
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <p>326</p>
+                        </div>
+                        <div class="status_item">
+                            <div class="child">
+                                <p>Accuracy Rate</p>
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <p>96.8%</p>
+                        </div>
+                    </section>
+
+                    <section class="project_table">
+                        <h2 class="title">Recent Projects</h2>
+                        <div class="table_wrapper">
+                          <table class="table">
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Type</th>
+                                <th>Progress</th>
+                                <th>Tasks</th>
+                                <th>Status</th>
+                                <th>Last Updated</th>
+                            </tr>
+                            <tr>
+                                <td>Product Image Labeling</td>
+                                <td>Image Classification</td>
+                                <td>
+                                    <div class="progress_bar">
+                                        <span class="child_bar_text">100%</span>
+                                        <span class="child_bar1"></span>
+                                    </div>
+                                </td>
+                                <td>450</td>
+                                <td class="child_status1">
+                                    <div>Completed</div>
+                                </td>
+                                <td>2 hrs ago</td>
+                            </tr>
+                            <tr>
+                                <td>Road Object Detection</td>
+                                <td>Bounding Box</td>
+                                <td>
+                                    <div class="progress_bar">
+                                        <span class="child_bar_text">75%</span>
+                                        <span class="child_bar2"></span>
+                                    </div>
+                                </td>
+                                <td>680</td>
+                                <td class="child_status2">
+                                    <div>In Process</div>
+                                </td>
+                                <td>5 hrs ago</td>
+                            </tr>
+                            <tr>
+                                <td>Customer Feedback Classification</td>
+                                <td>Text Classification</td>
+                                <td>
+                                    <div class="progress_bar">
+                                        <span class="child_bar_text">40%</span>
+                                        <span class="child_bar3"></span>
+                                    </div>
+                                </td>
+                                <td>154</td>
+                                <td class="child_status3">
+                                    <div>Pending</div>
+                                </td>
+                                <td>Yesterday</td>
+                            </tr>
+                            <tr>
+                                <td>Medical Image Annotation</td>
+                                <td>Segmentation</td>
+                                <td>
+                                    <div class="progress_bar">
+                                        <span class="child_bar_text">65%</span>
+                                        <span class="child_bar4"></span>
+                                    </div>
+                                </td>
+                                <td>310</td>
+                                <td class="child_status4">
+                                    <div>In Progress</div>
+                                </td>
+                                <td>3 hrs ago</td>
+                            </tr>
+                          </table>
+                        </div>
+                    </section>
+                </div>
+                <!-- Main Content Right  -->
+                <div class="main_right_content">
+                    <!-- Preview Section  -->
+                    <section class="priview">
+                        <h2 class="titled">Annotation Workspace Preview</h2>
+                        <div class="child_wrapper">
+                            <img class="bg_image" src="Image/img.png" alt="background image" />
+
+                            <div class="form_parent">
+                                <div class="form">
+                                    <h3>Labels</h3>
+                                    <div class="active">
+                                        <i class="fa-solid fa-car"></i>
+                                        <p>Car</p>
+                                        <p>×</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>Person</p>
+                                        <p>×</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-bicycle"></i>
+                                        <p>Bicycle</p>
+                                        <p>×</p>
+                                    </div>
+                                    <div>
+                                        <i
+                                            class="fa-solid fa-triangle-exclamation"
+                                        ></i>
+                                        <p>Traffic Sign</p>
+                                        <p>×</p>
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="action_button">
+                                    <button type="button">Save</button>
+                                    <button type="button">Submit</button>
+                                    <button type="button">Skip</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Activity Section -->
+                    <section class="activity">
+                        <h2>Activity</h2>
+                        <div>
+                            <ul>
+                                <li>You completed 24 tasks</li>
+                            </ul>
+                            <p>1 hour ago</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    New project 'Satellite Imagery' assigned
+                                </li>
+                            </ul>
+                            <p>4 hours ago</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Dataset 'Urban Traffic v2' uploaded</li>
+                            </ul>
+                            <p>1 day ago</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    Project 'Road Object Detection' accuracy
+                                    reached 96.8%
+                                </li>
+                            </ul>
+                            <p>1 day ago</p>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer class="footer_section">
+                <div class="copyright_text">
+                    <p>©2026 Labeler</p>
+                </div>
+                <div class="button">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#"> Support </a>
+                </div>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

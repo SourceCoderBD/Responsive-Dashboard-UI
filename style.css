@@ -1,0 +1,538 @@
+/* Besic Style and Reset */
+
+:root {
+    --bg-main: #0b0f19;
+    --bg-sidebar: #0f1523;
+    --bg-header: #141b2d;
+    --bg-active: #1d283a;
+    --accent-blue: #3b82f6;
+    --text-main: #f3f4f6;
+    --text-muted: #8e9bae;
+    --border-color: rgba(48, 136, 224, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 18px;
+    cursor: pointer;
+}
+body {
+    display: flex;
+    background-color: var(--bg-main);
+}
+/* Sidebar Style */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+  flex-direction: column;
+  gap: 20px;
+    width: 200px;
+    min-height: 100vh;
+    background-color: var(--bg-sidebar);
+    border-right: 2px solid rgba(86, 109, 132, 0.7);
+    padding: 10px;
+  
+}
+/* Sidebar Logo */
+.sidebar .sidebar_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-main);
+  
+}
+ .sidebar_logo i,
+.sidebar_logo span {
+    font-size: 20px;
+  
+} 
+/* Sidebar Navigation  */
+.sidebar .sidenav_item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 15px;
+  
+}
+.nav_item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: var(--text-muted);
+    gap: 8px;
+    padding: 6px 16px;
+}
+.nav_item.active {
+    color: #60a5fa;
+    background-color: var(--bg-active);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+.nav_item i,
+.nav_item span {
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+.nav_item.active i,
+.nav_item.active span {
+    color: #60a5fa;
+}
+
+/* Main Content Wrapper */
+
+.main_wrapper {
+    width: 100%;
+    min-width: 0;
+}
+/* Header Style */
+.main_wrapper .top_header {
+  position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+    border-bottom: 2px solid rgb(79, 97, 116);
+}
+/* Header Logo  */
+.top_header .header_logo{
+  display: block;
+}
+
+.top_header .header_logo i,.top_header .header_logo span{
+  font-size: 20px;
+}
+/* Header Left Navigation */
+.header_left_nav {
+    display: none;
+  
+}
+
+.header_left_nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 6px;
+}
+.header_left_nav a i,
+.header_left_nav a span {
+    font-size: 12px;
+    font-weight: bold;
+}
+/* Menu Toggle Button */
+.menu_toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+/* Header Right Navigation */
+.header_right {
+     display: none; 
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(41,60,69);
+}
+
+.header_right .icon_btn {
+    background: none;
+    border: none;
+    color: white;
+}
+.badge_btn {
+    position: relative;
+}
+.badge {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(62, 150, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+}
+.header_right i {
+    font-size: 30px;
+}
+.user_profile {
+    display: flex;
+    align-items: center;
+    padding: 0px 3px;
+}
+.avatar {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.username {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    gap: 5px;
+    color: white;
+}
+.username i {
+    font-size: 20px;
+}
+/* Content Ara Style */
+.content_area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+/* Main Content Left */
+.main_left_content {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* Heading Style  */
+.heading {
+    font-size: 20px;
+}
+.sub_heading {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+/* Status Section Style  */
+.main_left_content .status {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.status_item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(49, 67, 92, 0.6);
+    padding: 10px;
+
+    border-radius: 10px;
+}
+.status_item .child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+.status_item .child p {
+    color: var(--text-muted);
+
+    font-size: 12px;
+}
+/* Status Section Font Awesome Style */
+.status_item .child .fa-border-all {
+    color: rgb(73, 221, 202);
+}
+.status_item .child .fa-circle-check {
+    color: rgb(45, 226, 124);
+}
+.status_item .child .fa-regular.fa-clock {
+    color: rgb(237, 87, 87);
+}
+.status_item .child .fa-bullseye {
+    color: rgb(37, 136, 176);
+}
+
+/* Project Status Section Style */
+.project_table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+    background-color: rgba(42, 52, 66, 0.6);
+    border-radius: 10px;
+}
+.title {
+    height: 30px;
+
+    margin-left: 10px;
+}
+/* Project Section Table Style */
+.table_wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+.table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table tr {
+    border-bottom: 2px solid rgb(33, 83, 105);
+}
+
+.table th {
+    background-color: rgba(79, 91, 107, 0.6);
+    padding: 10px 12px;
+    font-size: 15px;
+}
+.table td { 
+    font-size: 12px;
+    background-color: transparent;
+    padding: 8px 10px;
+}
+/* Table Progressbar Style  */
+
+.progress_bar {
+    position: relative;
+    width: 80px;
+    height: 8px;
+    background-color: rgb(119, 146, 133);
+    border-radius: 5px;
+}
+.child_bar_text {
+    position: absolute;
+    left: 65%;
+    bottom: 105%;
+}
+
+.child_bar1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(82, 147, 239);
+    border-radius: 5px;
+}
+.child_bar2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background-color: rgb(82, 147, 239);
+    border-radius: 5px;
+}
+.child_bar3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(82, 147, 239);
+    border-radius: 5px;
+}
+.child_bar4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 100%;
+    background-color: rgb(82, 147, 239);
+    border-radius: 5px;
+}
+/* Table Status Style */
+.table .child_status1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 8px;
+    border: 1px solid rgb(14, 143, 106);
+    border-radius: 10px;
+    background-color: rgb(60, 92, 76);
+}
+.table .child_status2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 8px;
+    border: 1px solid rgb(14, 143, 106);
+    border-radius: 10px;
+    background-color: rgba(29, 134, 202, 0.6);
+}
+.table .child_status3 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 8px;
+    border: 1px solid rgb(14, 143, 106);
+    border-radius: 10px;
+    background-color: rgba(237, 164, 26, 0.6);
+}
+.table .child_status4 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 8px;
+    border: 1px solid rgb(14, 143, 106);
+    border-radius: 10px;
+    background-color: rgba(237, 164, 26, 0.6);
+    white-space: nowrap;
+}
+/* Main Content Right Style */
+.main_right_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 20px 0px;
+}
+/* Preview Section Style */
+.priview {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 5px 20px;
+    background-color: rgba(42, 52, 66, 0.6);
+    border-radius: 10px;
+}
+/* Preview Heading Style  */
+.titled {
+    font-size: 18px;
+}
+
+.child_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.bg_image{
+  width: 100%;
+}
+.form_parent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 90%;
+    padding: 15px 10px 85px;
+    border: 1px solid rgb(79, 85, 94);
+}
+.form div.active {
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+
+    gap: 5px;
+    padding: 0 6px;
+    background-color: rgba(72, 137, 229, 0.3);
+    border: 1px solid rgb(72, 137, 229);
+}
+.form div {
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 6px;
+    background-color: rgba(101, 113, 129, 0.4);
+}
+.form div i {
+    color: rgb(78, 137, 225);
+}
+.form div p:last-of-type {
+    margin-left: auto;
+}
+.form div:nth-of-type(3) i {
+    color: rgb(50, 255, 126);
+}
+.form div:nth-of-type(4) i {
+    color: rgba(218, 62, 62, 0.917);
+}
+.action_button {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+button[type="button"] {
+    width: 100%;
+    padding: 4px 10px;
+    background-color: rgba(33, 52, 57, 0.917);
+    border: 1px solid rgba(26, 36, 40, 0.917);
+    border-radius: 10px;
+}
+button[type="button"]:nth-child(2) {
+    background-color: rgba(64, 162, 247, 0.617);
+}
+/* Activity Section Style */
+.activity {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: rgba(42, 52, 66, 0.6);
+}
+.activity div ul li,
+.activity div p {
+    font-size: 12px;
+}
+.activity div {
+    display: flex;
+    gap: 15px;
+}
+.activity div ul li::marker {
+    color: rgba(64, 162, 247, 0.617);
+}
+
+/* Footer Section */
+.footer_section {
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+    border-top: 1px solid rgba(86, 86, 86, 0.617);
+    padding: 20px;
+}
+.footer_section .button {
+    display: flex;
+    gap: 10px;
+  
+}
+.footer_section .button a{
+  font-size: 16px;
+}

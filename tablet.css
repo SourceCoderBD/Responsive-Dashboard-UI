@@ -1,0 +1,30 @@
+@media screen and  (min-width:768px){
+
+ 
+
+  /* Header Logo  */
+.top_header .header_logo{
+  display: block !important;
+}
+/* Header Left navigation */  
+  .header_left_nav{
+    display: flex !important;
+  }
+  .content_area{
+    display: flex;
+  }
+  .main_left_content .status {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .child_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
